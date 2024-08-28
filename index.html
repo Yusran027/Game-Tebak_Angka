@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>TEBAK ANGKA</h1>
+    <div class="container">
+      <img src="img/Logo-YHL.jpeg" alt="" />
+      <h5 id="rule">Masukan angka 1-10</h5>
+      <p id="change"></p>
+      <input
+        class="input-field"
+        type="text"
+        id="x"
+        placeholder="Masukan Tebakan Anda..."
+        required
+        min="1"
+        max="10"
+      />
+      <p id="kesempatan"></p>
+      <p id="coba" style="display: none">Coba Lagi?</p>
+      <div class="btn">
+        <button class="ya" id="ya" onclick="klikYa()" style="display: none">
+          Ya
+        </button>
+        <button
+          class="tidak"
+          id="tidak"
+          onclick="klikTidak()"
+          style="display: none"
+        >
+          Tidak
+        </button>
+      </div>
+      <button class="submit-button" id="cari" onclick="play()">Cari</button>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

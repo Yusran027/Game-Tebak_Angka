@@ -1,0 +1,101 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the form */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #fff;
+  width: 35rem;
+  height: 23rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  border: 1.5px solid #8e2de2;
+}
+.input-field {
+  margin-bottom: 20px;
+  width: 90%;
+  padding: 12px;
+  border: 2px solid #8e2de2;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Slightly transparent background for input field */
+  color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+h5 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.input-field::placeholder {
+  color: #d3d3d3;
+}
+
+.input-field:focus {
+  border-color: #5a2d81;
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.6);
+  outline: none;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 3rem;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(138, 43, 226, 0.4);
+}
+
+.submit-button:hover {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+}
+
+.submit-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(138, 43, 226, 0.6);
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.btn .ya,
+.btn .tidak {
+  padding: 0.3rem 1rem;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(138, 43, 226, 0.4);
+}
